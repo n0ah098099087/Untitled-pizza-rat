@@ -5,14 +5,19 @@ TagManager:
   serializedVersion: 2
   tags:
   - HidingPlace
+  - Cheese
+  - Pickup
+  - pizza
+  - Ground
+  - Scored
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Rat
   - Water
   - UI
-  - 
+  - Item
   - 
   - 
   - 

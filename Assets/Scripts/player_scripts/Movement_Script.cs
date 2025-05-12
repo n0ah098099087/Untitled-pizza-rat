@@ -34,7 +34,7 @@ public class Movement_Script : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate ()
     {
-        move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        move = new Vector3(Input.GetAxis("Horizontal"), rb.velocity.y, Input.GetAxis("Vertical"));
         rb.velocity = move * Speed;
        
         
@@ -56,18 +56,18 @@ public class Movement_Script : MonoBehaviour
             Speed = InitialSpeed;
             
         }
+
       
     }
     void OnTriggerEnter(Collider other)
         {
-            Debug.Log("hidden");
 
             if (other.gameObject.tag == "HidingPlace")
             {
                 Hidden = true;
                 Debug.Log("hidden");
             }
-        }
+    }
 
       void OnTriggerExit(Collider other)
         {
@@ -76,5 +76,10 @@ public class Movement_Script : MonoBehaviour
                 Hidden = false;
                 Debug.Log("not hidden");
             }
-        }
-}
+      }
+    
+        
+    }
+
+
+
