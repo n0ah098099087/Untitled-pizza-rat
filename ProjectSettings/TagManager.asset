@@ -10,6 +10,8 @@ TagManager:
   - pizza
   - Ground
   - Scored
+  - Bench
+  - enemy
   layers:
   - Default
   - TransparentFX
@@ -18,7 +20,7 @@ TagManager:
   - Water
   - UI
   - Item
-  - 
+  - HideObject
   - 
   - 
   - 

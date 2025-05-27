@@ -13,22 +13,19 @@ using UnityEngine.SocialPlatforms.Impl;
 
 
 
+
 public class PickupScript : MonoBehaviour
 {
-
-    public GameObject temp;
+    
+    public GameObject ObjectName;
+    public Vector3 HeldObjectSpawn;
     bool PickupPrompt;
-    bool PutDownPrompt;
+    bool PutDownPrompt = false;
     bool HoldingObject = false;
-    string HeldObject;
     private Rigidbody Chedar;
     public int score = 0;
+    int IngridientsNumber =0;
    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -38,26 +35,30 @@ public class PickupScript : MonoBehaviour
             if (Input.GetButtonDown("Interact"))
             {
                 Debug.Log("PickedUp");
-                temp.transform.position = transform.position + new Vector3(0, 10, 0);
-                temp.transform.SetParent(gameObject.transform, true);
+                ObjectName.transform.position = transform.position + new Vector3(0, 10, 0);
+                ObjectName.transform.SetParent(gameObject.transform, true);
                 HoldingObject = true;
             }
 
         }
-        else if (PutDownPrompt == true && HoldingObject ==true)
+        else if (PutDownPrompt == true && HoldingObject == true)
         {
             if (Input.GetButtonDown("Interact"))
             {
-                Debug.Log("dropped");
-                temp.transform.SetParent(null, true);
-                temp.GetComponent<Rigidbody>().useGravity = true;
-                temp.GetComponent<Rigidbody>().isKinematic = false;
-                score += temp.GetComponent<ItemControler>().Score;
-                temp.gameObject.tag = "Scored";
+                ObjectName.transform.SetParent(null, true);
+                ObjectName.GetComponent<Rigidbody>().useGravity = true;
+                ObjectName.GetComponent<Rigidbody>().isKinematic = false;
+                score += ObjectName.GetComponent<ItemControler>().Score;
+                ObjectName.gameObject.tag = "Scored";
                 HoldingObject = false;
-                temp = null;
-
-
+                Debug.Log(ObjectName.transform.parent);
+                ObjectName = null;
+                HeldObjectSpawn = Vector3.zero;
+                IngridientsNumber++;
+                if ( IngridientsNumber == 5)
+                {
+                    Debug.Log("Win");
+                }
             }
 
         }
@@ -66,28 +67,35 @@ public class PickupScript : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Pickup")
+        if(other.gameObject.tag == "Pickup" && HoldingObject == false)
         {
             PickupPrompt = true;
-            temp = other.gameObject;
+            ObjectName = other.gameObject;
+            HeldObjectSpawn = other.transform.position;
 
         }
         else if (other.gameObject.tag == "pizza")
         {
             PutDownPrompt = true;
             
-
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        if(other.gameObject.tag == "Pickup")
+        if(other.gameObject.tag == "Pickup" && HoldingObject == false)
         {
             PickupPrompt = false;
+            ObjectName = null;
+            HeldObjectSpawn = Vector3.zero;
+
             
         }
+        else if(other.gameObject.tag == "pizza")
+        {
+            PutDownPrompt = false;
 
+        }
 
     }
-
+    
 }

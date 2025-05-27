@@ -1,0 +1,532 @@
+fileFormatVersion: 2
+guid: 700cd882bd9bad640b058df9ce493eee
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: "Avatar creation failed:\n\tAmbiguous Transform 'ratwalkcycle:RatRigNewCtrls:CTRL_Global01/ratwalkcycle:RatRigNewCtrls:SKELETON01/ratwalkcycle:RatRigNewCtrls:Ra_TailboneJnt/ratwalkcycle:RatRigNewCtrls:Ra_SpineJnt01/ratwalkcycle:RatRigNewCtrls:Ra_SpineJnt02/ratwalkcycle:RatRigNewCtrls:Ra_SpineJnt03/ratwalkcycle:RatRigNewCtrls:Ra_ShoulderJnt/ratwalkcycle:RatRigNewCtrls:Ra_R_HumerusJnt/ratwalkcycle:RatRigNewCtrls:Ra_R_RadiusJnt'
+      and 'ratwalkcycle:RatRigNewCtrls:CTRL_Global01/ratwalkcycle:RatRigNewCtrls:SKELETON01/ratwalkcycle:RatRigNewCtrls:Ra_TailboneJnt/ratwalkcycle:RatRigNewCtrls:Ra_SpineJnt01/ratwalkcycle:RatRigNewCtrls:Ra_R_IschiumJnt/ratwalkcycle:RatRigNewCtrls:Ra_R_RadiusJnt'
+      found in hierarchy for human bone 'RightShoulder'. Transform name mapped to
+      a human bone must be unique.\n"
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: ratwalk(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:CTRL_Global01
+      parentName: ratwalk(Clone)
+      position: {x: 0.024063302, y: 1.8615854, z: 3.4214559}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:SKELETON01
+      parentName: ratwalkcycle:RatRigNewCtrls:CTRL_Global01
+      position: {x: -0.024063302, y: 3.072908, z: -3.4214559}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_TailboneJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:SKELETON01
+      position: {x: 0.16377771, y: 0.4674766, z: 1.4146867}
+      rotation: {x: -0.7493027, y: 0.03216557, z: -0.6610549, w: 0.022743434}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_SpineJnt01
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_TailboneJnt
+      position: {x: -2.3550477, y: -0.75216645, z: 3.0464518e-15}
+      rotation: {x: -1.2210345e-16, y: -1.3584722e-16, z: 0.38286525, w: 0.9238042}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_SpineJnt02
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_SpineJnt01
+      position: {x: -2.6621165, y: -0.11033917, z: 3.5349501e-15}
+      rotation: {x: -1.1102232e-16, y: -1.1762502e-16, z: 0.15238589, w: 0.9883211}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_SpineJnt03
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_SpineJnt02
+      position: {x: -3.5759854, y: -0.21720065, z: -2.3012703e-12}
+      rotation: {x: 0.000025386578, y: 0.00010848511, z: 0.11322321, w: 0.99356955}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_ShoulderJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_SpineJnt03
+      position: {x: -2.16996, y: -0.29590234, z: 0.00043311928}
+      rotation: {x: -0.003141058, y: -0.008737497, z: 0.0017656084, w: 0.99995536}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_HumerusJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_ShoulderJnt
+      position: {x: 0.019052949, y: -0.38155913, z: -1.416207}
+      rotation: {x: 0.1039678, y: -0.020574072, z: 0.9191411, w: 0.37940347}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_RadiusJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_HumerusJnt
+      position: {x: -1.8370901, y: -0.022489347, z: 0.11971971}
+      rotation: {x: -0.14048374, y: 0.05720349, z: -0.72579163, w: 0.6709833}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_UlnaJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_RadiusJnt
+      position: {x: -2.8318005, y: 0.010827285, z: -0.05296158}
+      rotation: {x: -0.19781281, y: -0.5094513, z: -0.347541, w: 0.7619349}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_FFootJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_UlnaJnt
+      position: {x: -0.52871484, y: 4.263256e-15, z: 2.131628e-15}
+      rotation: {x: 0.022032112, y: 0.34522247, z: 0.0124088, w: 0.93818027}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_KnuckleJnt01
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_FFootJnt
+      position: {x: -0.3605373, y: 0.04534431, z: 0.53706557}
+      rotation: {x: 0.18603748, y: 0.36260375, z: -0.19179966, w: 0.8928166}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_MiddleKnuckleJnt01
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_KnuckleJnt01
+      position: {x: -0.17540756, y: -8.5265126e-16, z: 1.1368684e-15}
+      rotation: {x: -0.00810936, y: -0.029671047, z: 0.004359486, w: 0.9995173}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_FingeJntr01_End
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_MiddleKnuckleJnt01
+      position: {x: -0.6125194, y: 2.842171e-16, z: -1.1368684e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_KnuckleJnt02
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_FFootJnt
+      position: {x: -0.48183647, y: 0.071897045, z: 0.15338112}
+      rotation: {x: 0.031703364, y: 0.05021127, z: -0.12194083, w: 0.9907594}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_MiddleKnuckleJnt02
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_KnuckleJnt02
+      position: {x: -0.28648183, y: -3.1974422e-15, z: 2.842171e-16}
+      rotation: {x: -0.010986756, y: -0.025304684, z: -0.031089464, w: 0.99913585}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_FingerJnt02_End
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_MiddleKnuckleJnt02
+      position: {x: -0.82642186, y: -1.2789769e-15, z: -1.1368684e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_KnuckleJnt03
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_FFootJnt
+      position: {x: -0.50304383, y: 0.067712836, z: -0.23296079}
+      rotation: {x: -0.047597837, y: -0.092150286, z: -0.2062372, w: 0.97298974}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_MiddleKnuckleJnt03
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_KnuckleJnt03
+      position: {x: -0.23629333, y: -3.694822e-15, z: 4.6185276e-16}
+      rotation: {x: 0.0051347213, y: 0.015144687, z: 0.05893159, w: 0.99813396}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_FingerJnt03_End
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_MiddleKnuckleJnt03
+      position: {x: -0.8624096, y: 2.842171e-16, z: 3.1274983e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_KnuckleJnt04
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_FFootJnt
+      position: {x: -0.2800055, y: 0.018964637, z: -0.54578453}
+      rotation: {x: -0.2035296, y: -0.3757346, z: -0.1700494, w: 0.8879654}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_MiddleKnuckleJnt04
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_KnuckleJnt04
+      position: {x: -0.2301992, y: -1.9895197e-15, z: 0}
+      rotation: {x: -0.009264136, y: -0.03990341, z: -0.005575795, w: 0.99914503}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_FingerJnt04_End
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_MiddleKnuckleJnt04
+      position: {x: -0.6366912, y: 1.4210854e-15, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_NeckJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_ShoulderJnt
+      position: {x: -0.9302767, y: -0.44001877, z: -0.000000013971118}
+      rotation: {x: -0.002093559, y: -0.008172697, z: -0.095947735, w: 0.9953506}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_HeadJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_NeckJnt
+      position: {x: -0.796634, y: 0.0072764736, z: 0.000000016042987}
+      rotation: {x: -0.00051898573, y: -0.0062146415, z: -0.07129448, w: 0.99743587}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_JawJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_HeadJnt
+      position: {x: -1.6273282, y: -1.2793429, z: 0.0000000033190704}
+      rotation: {x: 0.004211064, y: 0.70415676, z: -0.004246124, w: 0.71001935}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_EyeJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_HeadJnt
+      position: {x: -1.0243081, y: 0.021670489, z: 0.50376874}
+      rotation: {x: 2.1263363e-20, y: 2.4002042e-10, z: -0.0037829508, w: 0.99999285}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_EyeJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_HeadJnt
+      position: {x: -1.0243033, y: 0.021670232, z: -0.503769}
+      rotation: {x: 3.7061772e-20, y: 6.0746175e-10, z: -0.003782952, w: 0.99999285}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_HumerusJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_ShoulderJnt
+      position: {x: 0.067795314, y: -0.39917523, z: 1.4081013}
+      rotation: {x: -0.058949642, y: -0.04988369, z: -0.42431432, w: 0.90221614}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_RadiusJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_HumerusJnt
+      position: {x: 1.8403322, y: 0.001252215, z: -0.054040328}
+      rotation: {x: -0.34271103, y: -0.38284764, z: -0.41920146, w: 0.74849653}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_UlnaJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_RadiusJnt
+      position: {x: 2.8323166, y: 0.0000024561161, z: -0.0000019400939}
+      rotation: {x: -0.1944474, y: -0.13253178, z: -0.044071767, w: 0.9709188}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_FFootJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_UlnaJnt
+      position: {x: 0.5287154, y: -0.0000001166318, z: 0.0000064677215}
+      rotation: {x: -0.01289661, y: 0.5016409, z: 0.02405075, w: 0.86464536}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_KnuckleJnt01
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_FFootJnt
+      position: {x: 0.3605307, y: -0.04534778, z: -0.53706384}
+      rotation: {x: 0.18603748, y: 0.36260375, z: -0.19179966, w: 0.8928166}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_MiddleKnuckleJnt01
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_KnuckleJnt01
+      position: {x: 0.17540976, y: 0.0000036044546, z: 0.0000017109448}
+      rotation: {x: -0.00810936, y: -0.029671047, z: 0.004359486, w: 0.9995173}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_FingeJnt01_End
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_MiddleKnuckleJnt01
+      position: {x: 0.6125201, y: 0.000000008279999, z: -0.0000051926368}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_KnuckleJnt02
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_FFootJnt
+      position: {x: 0.48183638, y: -0.07189519, z: -0.15338403}
+      rotation: {x: 0.031703364, y: 0.05021127, z: -0.12194083, w: 0.9907594}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_MiddleKnuckleJnt02
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_KnuckleJnt02
+      position: {x: 0.28648567, y: -0.000003999397, z: -0.0000017425846}
+      rotation: {x: -0.010986756, y: -0.025304684, z: -0.031089464, w: 0.99913585}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_FingerJnt02_End
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_MiddleKnuckleJnt02
+      position: {x: 0.8264172, y: -0.0000037816187, z: 0.0000023885657}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_KnuckleJnt03
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_FFootJnt
+      position: {x: 0.5030415, y: -0.067717716, z: 0.23296271}
+      rotation: {x: -0.046791874, y: -0.09256215, z: -0.21472017, w: 0.97115296}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_MiddleKnuckleJnt03
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_KnuckleJnt03
+      position: {x: 0.23629336, y: -0.00000040665668, z: -0.00000055791367}
+      rotation: {x: 0.0051347213, y: 0.015144687, z: 0.05893159, w: 0.99813396}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_FingerJnt03_End
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_MiddleKnuckleJnt03
+      position: {x: 0.86240935, y: 0.0000011401414, z: -0.00000038995188}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_KnuckleJnt04
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_FFootJnt
+      position: {x: 0.2800031, y: -0.018967982, z: 0.5457856}
+      rotation: {x: -0.2145892, y: -0.42801717, z: -0.158481, w: 0.86350256}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_MiddleKnuckleJnt04
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_KnuckleJnt04
+      position: {x: 0.23019792, y: 0.0000054714856, z: 0.0000032225562}
+      rotation: {x: -0.00913999, y: -0.029557755, z: -0.0073210476, w: 0.9994945}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_FingerJnt04_End
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_MiddleKnuckleJnt04
+      position: {x: 0.6366867, y: -0.0000016286629, z: -0.0000028043978}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_IschiumJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_SpineJnt01
+      position: {x: -0.017557783, y: -1.15218, z: -1.3376368}
+      rotation: {x: 0.29594216, y: -0.14009546, z: 0.93844527, w: 0.11005424}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_RadiusJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_IschiumJnt
+      position: {x: -2.8085485, y: -4.4862786e-10, z: 2.4763097e-10}
+      rotation: {x: 0.7338915, y: 0.65625465, z: -0.17470711, w: 0.0145138325}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_KneeJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_RadiusJnt
+      position: {x: -3.5864108, y: 0.0000001936782, z: 0.00000017140317}
+      rotation: {x: 0.94176304, y: 0.31127784, z: -0.096137986, w: 0.083342634}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_BAnkleJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_KneeJnt
+      position: {x: -1.9101422, y: 0.0000000023591962, z: -0.0000000011037702}
+      rotation: {x: -0.31044668, y: 0.9431207, z: -0.10052245, w: 0.06357147}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_BFootJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_BAnkleJnt
+      position: {x: -0.4571202, y: -0.048481774, z: 0.013483006}
+      rotation: {x: 0.00074076856, y: 0.010777544, z: 0.013301076, w: 0.9998532}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_Knuckle01
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_BFootJnt
+      position: {x: -0.25401267, y: -0.005304715, z: 0.6099514}
+      rotation: {x: 0.05647681, y: 0.40335342, z: 0.04795585, w: 0.9120399}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_MiddleKnuckleJnt01
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_Knuckle01
+      position: {x: -0.23029548, y: -5.684342e-16, z: -4.2632563e-16}
+      rotation: {x: -0.0027942532, y: -0.030220278, z: -0.08733997, w: 0.99571615}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_FingerJnt01_End
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_MiddleKnuckleJnt01
+      position: {x: -0.79514337, y: 1.7053025e-15, z: 1.4210854e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_KnuckleJnt02
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_BFootJnt
+      position: {x: -0.33327937, y: -0.027622242, z: 0.18339014}
+      rotation: {x: 0.0056292745, y: 0.022665124, z: -0.026553903, w: 0.99937457}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_MiddleKnuckle02
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_KnuckleJnt02
+      position: {x: -0.39216396, y: -5.684342e-16, z: -1.7053025e-15}
+      rotation: {x: -0.00011024799, y: 0.008896013, z: -0.037642643, w: 0.99925166}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_FingeJntr02_End
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_MiddleKnuckle02
+      position: {x: -1.0018623, y: -5.684342e-16, z: 1.1368684e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_KnuckleJnt03
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_BFootJnt
+      position: {x: -0.3546409, y: 0.011584503, z: -0.28813368}
+      rotation: {x: -0.001256794, y: -0.08951086, z: -0.0153985, w: 0.995866}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_MiddleKnuckleJnt03
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_KnuckleJnt03
+      position: {x: -0.36403453, y: -1.1368684e-15, z: 0}
+      rotation: {x: 0.00006947817, y: 0.015043276, z: -0.0438316, w: 0.9989257}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_FingerJnt03_End
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_MiddleKnuckleJnt03
+      position: {x: -1.0041972, y: 1.7053025e-15, z: -5.684342e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_KnuckleJnt04
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_BFootJnt
+      position: {x: -0.19304529, y: -0.01531913, z: -0.6137011}
+      rotation: {x: -0.03356342, y: -0.46926057, z: -0.0010775038, w: 0.882421}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_MiddleKnuckleJnt04
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_KnuckleJnt04
+      position: {x: -0.2998617, y: -5.684342e-16, z: -1.4210854e-15}
+      rotation: {x: 0.0025535387, y: 0.04251221, z: -0.020877723, w: 0.99887455}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_L_FingerJnt04_End
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_L_MiddleKnuckleJnt04
+      position: {x: -0.73511297, y: 1.7053025e-15, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_IschiumJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_SpineJnt01
+      position: {x: -0.017555002, y: -1.1521797, z: 1.33764}
+      rotation: {x: -0.06708956, y: -0.2396449, z: -0.14519984, w: 0.9575941}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_RadiusJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_IschiumJnt
+      position: {x: 2.8085492, y: -0.00000031285464, z: 0.0000006023136}
+      rotation: {x: 0.7339805, y: 0.6561468, z: -0.17473526, w: 0.014545739}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_KneeJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_RadiusJnt
+      position: {x: 3.5864084, y: -0.000005754798, z: 0.000005931937}
+      rotation: {x: 0.9465319, y: 0.3004741, z: -0.11001091, w: -0.04111291}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_BAnkleJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_KneeJnt
+      position: {x: 1.9101493, y: 0.0000073024535, z: -0.000000702929}
+      rotation: {x: -0.31986305, y: 0.91452247, z: -0.24062173, w: 0.058630407}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_BFootJnt
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_BAnkleJnt
+      position: {x: 0.4571168, y: 0.04847742, z: -0.013477545}
+      rotation: {x: 0.00074076856, y: 0.010777544, z: 0.013301076, w: 0.9998532}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_Knuckle01
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_BFootJnt
+      position: {x: 0.2540172, y: 0.005308085, z: -0.60995024}
+      rotation: {x: 0.05647681, y: 0.40335342, z: 0.04795585, w: 0.9120399}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_MiddleKnuckleJnt01
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_Knuckle01
+      position: {x: 0.23029804, y: -0.0000004945981, z: -0.0000022381037}
+      rotation: {x: -0.0027942532, y: -0.030220278, z: -0.08733997, w: 0.99571615}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_FingerJnt01_End
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_MiddleKnuckleJnt01
+      position: {x: 0.7951443, y: -0.0000042401225, z: -0.000002532173}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_KnuckleJnt02
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_BFootJnt
+      position: {x: 0.3332828, y: 0.027621465, z: -0.1833926}
+      rotation: {x: 0.0056292745, y: 0.022665124, z: -0.026553903, w: 0.99937457}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_MiddleKnuckle02
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_KnuckleJnt02
+      position: {x: 0.39216402, y: 0.000004717911, z: -0.00000014136226}
+      rotation: {x: -0.00011024799, y: 0.008896013, z: -0.037642643, w: 0.99925166}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_FingeJntr02_End
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_MiddleKnuckle02
+      position: {x: 1.0018619, y: -0.000002383793, z: -0.0000017669065}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_KnuckleJnt03
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_BFootJnt
+      position: {x: 0.35464117, y: -0.011581115, z: 0.28813332}
+      rotation: {x: -0.001256794, y: -0.08951086, z: -0.0153985, w: 0.995866}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_MiddleKnuckleJnt03
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_KnuckleJnt03
+      position: {x: 0.3640355, y: -0.0000075856783, z: -0.0000075447847}
+      rotation: {x: 0.00006947817, y: 0.015043276, z: -0.0438316, w: 0.9989257}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_FingerJnt03_End
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_MiddleKnuckleJnt03
+      position: {x: 1.0041971, y: 0.0000066545235, z: 0.0000015035067}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_KnuckleJnt04
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_BFootJnt
+      position: {x: 0.19304568, y: 0.015314464, z: 0.6137032}
+      rotation: {x: -0.03356342, y: -0.46926057, z: -0.0010775038, w: 0.882421}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_MiddleKnuckleJnt04
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_KnuckleJnt04
+      position: {x: 0.29986012, y: 0.00000011991996, z: -0.0000056053354}
+      rotation: {x: 0.0025535387, y: 0.04251221, z: -0.020877723, w: 0.99887455}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_R_FingerJnt04_End
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_R_MiddleKnuckleJnt04
+      position: {x: 0.73510987, y: 0.000007672488, z: -0.0000011606807}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_TailJnt1
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_TailboneJnt
+      position: {x: 1.071555, y: 0.31555128, z: -1.3677947e-15}
+      rotation: {x: -0.18347475, y: 0.9830244, z: -4.8958296e-17, w: 7.1427476e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_TailJnt2
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_TailJnt1
+      position: {x: -3.4100866, y: 0.009423495, z: 2.0339285e-15}
+      rotation: {x: -6.938894e-17, y: 5.3776428e-17, z: -0.046284694, w: 0.9989283}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_TailJnt3
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_TailJnt2
+      position: {x: -3.8357184, y: -0.020851685, z: 2.469136e-15}
+      rotation: {x: -5.551115e-17, y: 2.0101108e-16, z: -0.1460097, w: 0.98928314}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_TailJnt4
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_TailJnt3
+      position: {x: -3.3183508, y: -0.0033623544, z: 9.05942e-16}
+      rotation: {x: -2.4980018e-16, y: 2.3256137e-16, z: -0.11572383, w: 0.9932814}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ratwalkcycle:RatRigNewCtrls:Ra_TailJntEnd
+      parentName: ratwalkcycle:RatRigNewCtrls:Ra_TailJnt4
+      position: {x: -3.6946108, y: 0.014256765, z: 9.677375e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
