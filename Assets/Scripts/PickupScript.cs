@@ -10,6 +10,7 @@ using System.Runtime.CompilerServices;
 using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
+using TMPro;
 
 
 
@@ -25,6 +26,9 @@ public class PickupScript : MonoBehaviour
     private Rigidbody Chedar;
     public int score = 0;
     int IngridientsNumber =0;
+    public GameObject StaminaBar;
+    public GameObject WinScreen;
+    public TextMeshProUGUI ScoreNumber;
    
 
     // Update is called once per frame
@@ -38,6 +42,7 @@ public class PickupScript : MonoBehaviour
                 ObjectName.transform.position = transform.position + new Vector3(0, 10, 0);
                 ObjectName.transform.SetParent(gameObject.transform, true);
                 HoldingObject = true;
+                PickupPrompt = false;
             }
 
         }
@@ -55,9 +60,15 @@ public class PickupScript : MonoBehaviour
                 ObjectName = null;
                 HeldObjectSpawn = Vector3.zero;
                 IngridientsNumber++;
+                
                 if ( IngridientsNumber == 5)
                 {
                     Debug.Log("Win");
+                    StaminaBar.SetActive(false);
+                    WinScreen.SetActive(true);
+                    GetComponent<Movement_Script>().enabled = false;
+                    ScoreNumber.text = score.ToString();
+
                 }
             }
 
@@ -79,6 +90,7 @@ public class PickupScript : MonoBehaviour
             PutDownPrompt = true;
             
         }
+       
     }
     private void OnTriggerExit(Collider other)
     {
@@ -97,5 +109,15 @@ public class PickupScript : MonoBehaviour
         }
 
     }
-    
+    public void ObjectReset()
+    {
+        if (ObjectName != null)
+        {
+
+            ObjectName.transform.SetParent(null, true);
+            ObjectName.transform.position = HeldObjectSpawn;
+            ObjectName = null;
+            HoldingObject = false;
+        }
+    }
 }

@@ -12,6 +12,8 @@ TagManager:
   - Scored
   - Bench
   - enemy
+  - Water
+  - spotted
   layers:
   - Default
   - TransparentFX

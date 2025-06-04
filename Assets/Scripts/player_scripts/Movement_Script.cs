@@ -4,6 +4,7 @@ using System.Runtime.CompilerServices;
 using Unity.PlasticSCM.Editor.WebApi;
 using Unity.VisualScripting;
 using UnityEditor;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,14 +21,22 @@ public class Movement_Script : MonoBehaviour
     float Delay2;
     bool Hidden;
     bool Sprinting;
+    public bool Caught;
+    public bool Respawning;
     public float Stamina = 1;
     Vector3 moveAbsolute;
     Vector3 move;
     Rigidbody rb;
     public Transform Body;
     public Image StaminaBar;
+    public Image BlackScreen;
+    public Image SneakyScreen;
     public Vector3 SpawnPoint;
-    public GameObject itself;
+    public Animator RatAnimations;
+    public Animator BenchNpc;
+    PickupScript pickupScript;
+    
+
     
     
     // Start is called before the first frame update
@@ -38,17 +47,50 @@ public class Movement_Script : MonoBehaviour
         InitialSpeed = Speed;
         Hidden = false;
         SpawnPoint = transform.position;
+        pickupScript = GetComponent<PickupScript>();
+    }
+
+    private void Update()
+    {
+        if (Caught == true && Respawning == true)
+        {
+            
+            BlackScreen.fillAmount += 0.50f * Time.deltaTime ;
+            if (BlackScreen.fillAmount >= 1)
+            {
+                Respawning = false;
+                transform.position = SpawnPoint;
+
+            }
+        }
+        else if (Caught == true && Respawning == false)
+        {
+            pickupScript.ObjectReset();
+            BlackScreen.fillAmount -= 0.60f * Time.deltaTime;
+            if (BlackScreen.fillAmount == 0)
+            {
+                Caught = false;
+               
+            }
+
+        }
     }
 
     // Update is called once per frame
     void FixedUpdate ()
     {
-        move = new Vector3(Input.GetAxis("Horizontal"), rb.velocity.y, Input.GetAxis("Vertical"));
-        rb.velocity = move * Speed;
-       
-        
 
-        if (move.x != 0 || move.z != 0)
+        if (!Caught)
+        {
+            move = new Vector3(Input.GetAxis("Horizontal"), rb.velocity.y, Input.GetAxis("Vertical"));
+            rb.velocity = move * Speed;
+            
+            
+
+        }
+           RatAnimations.SetBool("Walking", move.magnitude > 0.9);
+
+        if (move.x != 0 || move.z != 0 )
         {
             Body.rotation = Quaternion.RotateTowards(Body.rotation, Quaternion.LookRotation(-move), RotationSpeed * Time.deltaTime);
         }
@@ -58,20 +100,22 @@ public class Movement_Script : MonoBehaviour
             Speed = SprintSpeed;
             CurrentSpeed = SprintSpeed;
             Sprinting = true;
+            
         }
         else
         {
             Speed = InitialSpeed;
             Sprinting = false;
+            
         }
+        RatAnimations.SetBool("Running", Sprinting);
         if(Sprinting == true)
         {
             Stamina -= 0.20f*Time.deltaTime;
-            Debug.Log(Stamina);
             Delay = Time.time;
             StaminaBar.fillAmount = Stamina;
         }
-        if(Sprinting == false && Delay +3 <Time.time)
+        if(Sprinting == false && Delay +2 <Time.time)
         {
             Stamina += 0.30f*Time.deltaTime;
             StaminaBar.fillAmount = Stamina;
@@ -80,19 +124,32 @@ public class Movement_Script : MonoBehaviour
                 Stamina = 1;
             }
         }
+       
     }
     void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.tag == "HidingPlace")
-            {
+        if (other.gameObject.tag == "HidingPlace")
+        {
                 Hidden = true;
                 Debug.Log("hidden");
-            }
-            if(other.gameObject.tag == "enemy")
-            {
-             
-            }
+                SneakyScreen.gameObject.SetActive(true);
+                
+        }
+        if (other.gameObject.tag == "enemy")
+        {
+            Debug.Log("caught");
+           
+            Caught = true;
+            Respawning = true;
+            rb.velocity = new Vector3(0, 0, 0);
             
+
+        }
+        if (other.gameObject.tag == "spotted")
+        {
+            BenchNpc.SetBool("Angry" , true);
+
+        }
     }
    
 
@@ -102,8 +159,14 @@ public class Movement_Script : MonoBehaviour
             {
                 Hidden = false;
                 Debug.Log("not hidden");
+                SneakyScreen.gameObject.SetActive(false);
             }
-      }
+            if (other.gameObject.tag == "spotted")
+            {
+            BenchNpc.SetBool("Angry", false);
+
+            }
+    }
     
         
     }
